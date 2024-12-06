@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade-In Scroll Animation</title>
+  <link rel="stylesheet" href="DInfostyle.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <div class="menu-area">
+    <h1 class="logo">Draft Page</h1>
+    <ul class="nav">
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="ContactPage.html">Contact</a></li>
+      <li><a href="RInfo.html">Recipe App</a></li>
+      <li><a href="TDInfo.html">To-Do App</a></li>
+      <li><a href="Footbalers.html">Favorite Football PLayers</a></li>
+    </ul>
+  </div>
+
+  <!-- Introductory Section -->
+  <section id="home">
+    <div class="content">
+      <h1 id="title" class="centered-box">NBA Draft <br> Group Project</h1>
+      <p>Scroll down for content</p>
+      
+    </div>
+  </section>
+
+
+    <div class="fade-in-section rounded-box">
+      <p>
+        <h2 style="color: #970607;">CREDITS</h2>
+        I worked on this project with 4 other people <br> Paul Rubio <br> April Paz <br> Bayasgalan Otgonbayar <br> Yousef Sadik. <br>Credit is due to the amazing group i worked with on this project</p>
+    </div>
+    <div class="fade-in-section rounded-box">
+      <p>
+        <h2 style="color: #970607;">THE IDEA</h2>
+        The Idea for this project was to create a web page where the user would open the page and be presented with a team they would have to beat in a 5v5 situation. <br>
+        They would shuffle through are massive list of players from the NBA and pick their personal all star line up within a certin budget we gave them. <br> The Program would then out put the winner
+    </p>
+    </div>
+    <div class="fade-in-section rounded-box">
+        <p class="video-container">
+            <h2 style="color: #970607;">DEMO</h2>
+            <video class="video" controls>
+                <source src="images/2024-12-04 11-41-52.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </p>
+    </div>
+    <div class="fade-in-section rounded-box">
+        <h2 style="color: #970607;">How It Works</h2>
+        <p>The code works by using a massive array of players that contains their images, rating, cost and name. We created 10 player choise functions, one for each position on each team.
+            Each position had their own function that would create a random number from 0 to the length of the array size for that position and then it would pull the information and photo id for that player
+            and would then present it in the player box we create. <br>
+            we created 3 types of buttons, single player shuffle button: 
+            <br> A lock button and a shuffle all button. the single player shuffle button would activate the playershufle function corisponding to that position.
+            <br> The lock function would disable the playershuffle button that was in the same container as it on the page. it would also then add the layer rating of the locked player into a team1rating array to be used later.
+            <br> The shuffle all button would, on click, activate all of the personal player shuffle function buttons.
+
+        </p>
+    </div>
+    <div class="fade-in-section rounded-box">
+        <h2 style="color: #970607;">Here is a Link to the draft website</h2>
+      <p>
+        <br>
+        <br>
+        <a href="DraftProjectEmbeded/DPEhomepagefinal.html">NBA Draft</a></p>
+    </div>
+
+  
+
+  <script src="DInfoscript.js"></script>
+</body>
+</html>

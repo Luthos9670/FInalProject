@@ -1,0 +1,221 @@
+/* Global Settings */
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-image: url('toronto.jpeg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        color: #333;
+    }
+    
+  
+  .intro-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0072ff;
+    color: white;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .intro-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  /* Header Box */
+  .header-box {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: none;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 60vh;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0072ff , #00c6ff);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease, left 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .slide.active {
+    left: 0;
+    opacity: 1;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 90%;
+    margin: 0;
+  }
+  
+  video {
+    width: 70%;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 60vh;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0072ff , #00c6ff);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.slide-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    text-align: center;
+    padding: 15px;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 15;
+}
+
+
+.slide-header h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.right {
+    position: absolute;
+    right: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgb(184, 184, 184);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+  .slide-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .slide-container.active {
+    margin-top: 80px;
+  }
+  
+  .side-menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 400px;
+    background-color: #0072ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    padding: 20px 0;
+}
+
+  
+
+  .side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .side-menu a:hover {
+    color: #00c6ff;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .side-menu {
+      width: 50px;
+    }
+  
+    .side-menu a {
+      font-size: 0.8rem;
+    }
+  }

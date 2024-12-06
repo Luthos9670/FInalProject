@@ -1,0 +1,74 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url("kobe-2001-1.webp");
+    background-size: cover;      /* Ensure image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+  }
+  
+  /* Background video */
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Logo styles */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  
+  /* Centered Button styles */
+  .center-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0071ce;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 45.5%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Pulsing animation for the button */
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Button hover effect */
+  .center-button:hover {
+    background-color: #005bb5;
+  }

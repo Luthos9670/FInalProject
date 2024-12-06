@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3rem;
+    color:#FF9645;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    color: #FF9645;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    position: relative;
+    padding: 20px 40px;
+    background-color: #1F0B01; /* Semi-transparent white for bubble effect */
+    border-radius: 50px; /* Creates rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #FF9645;
+    color: #1F0B01;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50px; /* Rounded button for a more modern look */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.btn:hover {
+    background-color: #FFAE44;
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.btn:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+h1, p {
+    font-family: 'Georgia', serif; /* Elegant, restaurant-style font */
+}
+
+body {
+    background: url('images/resturant.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 0 10px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+.buttons .btn {
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    background-color: #FF9645;
+    text-align: center;
+    color: #1F0B01;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin: 15px;
+}
+
+.buttons .btn:hover {
+    background-color: #FFAE44;
+    transform: scale(1.1);
+}
+
+.buttons .btn:active {
+    transform: scale(1.05);
+}
+
+.back-btn {
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    color: #FFAE44;
+}

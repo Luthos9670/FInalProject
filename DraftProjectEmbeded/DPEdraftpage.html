@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Ultimate Draft</title>
+    <link rel="stylesheet" href="DPEdraftpage.css">
+</head>
+
+<body>
+    <!-- Banner Section -->
+    <div class="top-banner">
+        <img src="Logo.png" alt="Banner Image" class="banner-img">
+        <p class="banner-p"><b>NBA ULTIMATE DRAFT</b></p>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="navbar">
+            <a href="DPEdraftpage.html">Restart Draft</a>
+
+            <div class="dropdown-players">
+                <button class="dropbtn">Players</button>
+                <div class="dropdown-content">
+                    <a href="PlayerStats.html">Player Stats</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1><b>Generate Draft</b></h1>
+    <h4><i>(TEAM VS TEAM)</i></h4>
+
+    <div class="game-container">
+        <!-- First Team Image Containers -->
+        <div class="image-container" id="image1">
+            <img src="image1.jpg" alt="Image 1" class="image">
+            <p style="color: rgb(179, 168, 18);"></p> <!-- This will display the content of c[randomnumber] -->
+            
+            <button class="shuffle" onclick="shuffleCenterImage(1)" aria-label="Shuffle Center Image 1">Shuffle</button>
+            <button class="lock" onclick="lockImage(1)" aria-label="Lock Image 1">Lock</button>
+        </div>
+        
+        <div class="image-container" id="image2">
+            <img src="image2.jpg" alt="Image 2" class="image">
+            <ps style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shufflePowerForwardImage(2)" aria-label="Shuffle Power Forward Image 2">Shuffle</button>
+            <button class="lock" onclick="lockImage(2)" aria-label="Lock Image 2">Lock</button>
+        </div>
+        <div class="image-container" id="image3">
+            <img src="image3.jpg" alt="Image 3" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shuffleSmallForwardImage(3)" aria-label="Shuffle Small Forward Image 3">Shuffle</button>
+            <button class="lock" onclick="lockImage(3)" aria-label="Lock Image 3">Lock</button>
+        </div>
+        <div class="image-container" id="image4">
+            <img src="image4.jpg" alt="Image 4" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shuffleShootingGuardImage(4)" aria-label="Shuffle Shooting Guard Image 4">Shuffle</button>
+            <button class="lock" onclick="lockImage(4)" aria-label="Lock Image 4">Lock</button>
+        </div>
+        <div class="image-container" id="image5">
+            <img src="image5.jpg" alt="Image 5" class="image">
+            <p style="color: rgb(179, 168, 18);">  </p>
+            <button class="shuffle" onclick="shufflePointGuardImage(5)" aria-label="Shuffle Point Guard Image 5">Shuffle</button>
+            <button class="lock" onclick="lockImage(5)" aria-label="Lock Image 5">Lock</button>
+        </div>
+        <button class="shuffle-all" onclick="shuffleAll()" aria-label="Shuffle All">Shuffle All</button>
+        
+    </div>
+
+    <div class="game-container second-row">
+        <!-- First Player Image in the New Row -->
+        <div class="image-container" id="image6">
+            <img src="image6.jpg" alt="Image 6" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shuffleCenterImage(6)" aria-label="Shuffle Center Image 6">Shuffle</button>
+            <button class="lock" onclick="lockImage(6)" aria-label="Lock Image 6">Lock</button>
+        </div>
+    
+        <!-- Second Player Image in the New Row -->
+        <div class="image-container" id="image7">
+            <img src="image7.jpg" alt="Image 7" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shufflePowerForwardImage(7)" aria-label="Shuffle Power Forward Image 7">Shuffle</button>
+            <button class="lock" onclick="lockImage(7)" aria-label="Lock Image 7">Lock</button>
+        </div>
+        
+        <!-- Third Player Image in the New Row -->
+        <div class="image-container" id="image8">
+            <img src="image8.jpg" alt="Image 8" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shuffleSmallForwardImage(8)" aria-label="Shuffle Small Forward Image 8">Shuffle</button>
+            <button class="lock" onclick="lockImage(8)" aria-label="Lock Image 8">Lock</button>
+        </div>
+    
+        <!-- Fourth Player Image in the New Row -->
+        <div class="image-container" id="image9">
+            <img src="image9.jpg" alt="Image 9" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shuffleShootingGuardImage(9)" aria-label="Shuffle Shooting Guard Image 9">Shuffle</button>
+            <button class="lock" onclick="lockImage(9)" aria-label="Lock Image 9">Lock</button>
+        </div>
+    
+        <!-- Fifth Player Image in the New Row -->
+        <div class="image-container" id="image10">
+            <img src="image10.jpg" alt="Image 10" class="image">
+            <p style="color: rgb(179, 168, 18);"></p>
+            <button class="shuffle" onclick="shufflePointGuardImage(10)" aria-label="Shuffle Point Guard Image 10">Shuffle</button>
+            <button class="lock" onclick="lockImage(10)" aria-label="Lock Image 10">Lock</button>
+        </div>
+    
+        
+        <!-- Shuffle All button for the second row -->
+        <button class="shuffle-all2" onclick="shuffleAll2()" aria-label="Shuffle All Second Row">Shuffle Opponent</button>
+
+
+    </div>
+    
+    <div class="result-container">
+        <button id="start-button" class="start-button" onclick="checkWinner()" style="display: none;">Start</button>
+        <h2 id="result" style="color: greenyellow;"></h2>
+    </div>
+    
+
+    <script src="DPEdraftpage.js"></script>
+</body>
+
+<footer>&copy; 2024</footer>
+</html>

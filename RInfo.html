@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Popups</title>
+    <link rel="stylesheet" href="Rinfo.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <div class="title-box">
+        <h1>The Recipe App</h1>
+    </div>
+    <!-- Navigation Menu -->
+    <nav>
+        <button><a href="HomePage.html">Home</a></button>
+        <button><a href="DraftInfo.html">Draft Project</a></button>
+        <button><a href="ContactPage.html">Contact Page</a></button>
+        <button><a href="TDInfo.html">To-Do List App</a></button>
+        <button><a href="Footbalers.html">Favorite Football Players</a></button>
+        
+    </nav>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button onclick="openPopup('popup1')">THE IDEA</button>
+        <button onclick="openPopup('popup2')">LINK</button>
+        <button onclick="openPopup('popup3')">HOW IT WORKS</button>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="closeAllPopups()"></div>
+
+    <!-- Popups -->
+    <div id="popup1" class="popup">
+        <p>The idea for this app came from my family never knowing what to eat for dinner
+        we would have stuff in the fridge but have no ideas. The app has to pages one for food and one for drink
+        . You type in an ingrediant, for food that could be beef or chicken and for drinks that could be a type of alchole
+        it then uses an API to access a food and drink database and gives you a list of things you can make with your desired ingrediant</p>
+        <button onclick="closePopup('popup1')">Close</button>
+    </div>
+
+    <div id="popup2" class="popup">
+        <p><a href="RecipeProjectEmbeded/Homepage.html" style="font-family: 'Courier New', Courier, monospace; color: brown; ">Recipe App</a></p>
+        <button onclick="closePopup('popup2')">Close</button>
+    </div>
+
+    <div id="popup3" class="popup">
+        <p>In a search bar it uses the users input and assigns using the input calls the api to search for foods containing that ingrediant id
+            it then creats a list that adds a new entity in for every item that has the ingrediant. When you click on the recipe button under the food item of your choise
+            it creats a pop up that gives you the ingrediants needed how to prepare the food and a link to a youtube video that insctructs you as well.
+        </p>
+        <button onclick="closePopup('popup3')">Close</button>
+    </div>
+
+    <script src="Rinfoscript.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

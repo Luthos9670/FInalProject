@@ -1,40 +1,43 @@
-<html>
-    <head>
-        <title>Professional Portfolio<br>By Lucas Pinto</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <title>HomePage</title>
+
+</head>
 <body>
-    <h1>Home Page</h1>
-    <h3>Links to other pages</h3>
-    <table border="1">
-        <tr>
-            <th>Contact Page</th>
-            <td><a href="contact.html">Contact Page</a></td>
-        </tr>
-        <tr>
-            <th>Bio</th>
-            <td><a href="About Me.html">Bio</a></td>
-        </tr>
-        <tr>
-            <th>Resume</th>
-            <td><a href="resumr.html"></a></td>
-        </tr>
-        <tr>
-            <th>Projects</th>
-            <td><a href="projects.html"></a></td>
-        </tr>
-        <tr>
-            <th>Small Game</th>
-            <td></td>
-        </tr>
-        <tr>
-            <th>Fantasy Football</th>
-        </tr>
-    </table> 
+    <div id="hero">
+        <div class="navbar">
+            <img class="logo">
+            <div class="user">
+                <button type="button">Explore</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1>Lucas Pinto</h1>
+                <p>I am a 20-year-old student from Toronto, currently studying Computer Programming and Analysis at Humber Polytecnic. 
+                    I have a strong passion for technology specifically coding and web design, i enjoy Playing guitar and playing soccer, i play on 3 teams. 
+                    I am a loyal, even through the very hard times, supporter of Manchester United, Benfica, and Corinthians, regularly following their matches and have even been able to catch a couple games in person. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidePanel">
+        <h2>
+            <button class="back-btn">&#8592;</button> Explore Menu
+        </h2>
+        <ul>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a href="DraftInfo.html">Draft Project</a></li>
+            <li><a href="RInfo.html">Recipe app</a></li>
+            <li><a href="TDInfo.html">To-do list app</a></li>
+            <li><a href="Footbalers.html">Favorite Football PLayers</a></li>
+        </ul>
+    </div>
+
+    <script src="HomeScript.js"></script>
 </body>
-
-
-
-
-
-
 </html>

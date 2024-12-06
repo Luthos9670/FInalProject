@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('images/jordan photo.jpg');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+
+
+.menu-area {
+    position: sticky;  /* Sticky positioning */
+    top: 0;            /* Stick to the top */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;      /* Height of the menu */
+    background-color: rgba(161, 0, 1, 0.2);  /* Transparent background */
+    z-index: 10;       /* Ensure it's above the background */
+}
+
+/* Styling for the logo */
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(161, 0, 1, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 12);
+}
+.centered-box {
+    display: inline-block; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.rounded-box {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgb(161, 0, 1, 0.8);
+    width: 80%;
+    max-width: 900px;
+}
+
+
+/* Styling for the navigation list */
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+
+a {
+    margin: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50%;
+    background-color: rgb(237, 0, 1, 0.6); 
+    
+    font-family: 'Impact', sans-serif;
+    transition: background 0.3s ease;
+}
+
+
+a:hover {
+    background-color: rgb(161, 0, 1, 0.8); 
+}
+
+
+#home {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+
+#home .content {
+    width: 100%;
+    padding-top: 90px; 
+    z-index: 2; 
+}
+
+#home .content h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    color: #A10001;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 12); 
+}
+
+#home .content p {
+    width: 50%;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 25px;
+    color: #970607;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 12); 
+}
+
+
+.fade-in-section {
+    opacity: 0; 
+    /*transform: translateY(20px);*/ 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    margin-bottom: 100px; 
+    min-height: 100px; 
+}
+
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    .menu-area {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    #home .content h1 {
+        font-size: 40px;
+    }
+
+    #home .content p {
+        width: 80%;
+    }
+}
+
+.video-container {
+    text-align: center; 
+    width: 100%;
+    padding: 10px;
+}
+
+.video {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Navigation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="TDInfo.css">
+</head>
+<body>
+    <div class="side-menu">
+        <h2>Menu</h2>
+        <a href="HomePage.html">Home</a>
+        <a href="ContactPage.html">Contact Page</a>
+        <a href="DraftInfo.html">Draft Project</a>
+        <a href="RInfo.html">Recipe App</a>
+        <a href="Footbalers.html">Favorite Football Players</a>
+      </div>
+
+  <div class="intro-header" id="introHeader">
+    <h1>Click the arrow for more information</h1>
+  </div>
+
+  <div class="header-box" id="headerBox">
+    <h1>To-Do List App</h1>
+  </div>
+
+  <div class="slide-container">
+    
+    
+    <div class="slide" id="slide1">
+        <div class="slide-header">
+            <h2>DEMO</h2>
+          </div>
+      <video src="images/2024-12-06 10-42-09.mp4" controls></video>
+    </div>
+
+    <div class="slide" id="slide2">
+        <div class="slide-header">
+            <h2>HOW IT WORKS</h2>
+          </div>
+      <p>The idea for this app was to let users list down as many tasks as they needed to complete.
+        <br> They are also able to cross off tasks as they complete them or <br> completely delte them if needed. One of the big benifits of my app is <br> that it saves your changes into the browser so you don't have to worry about 
+        your tasks being delted if you leave and come back. <br> Here is the link to the App: <br> <a href="TDEmbeded/Index.html" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">To-Do List App</a>
+      </p>
+      
+    </div>
+
+    <div class="slide" id="slide3">
+        <div class="slide-header">
+            <h2>THE IDEA</h2>
+          </div>
+      <p>The program awaits a user to input text into the add task input bar, it will send out an alert if the button is clicked and their is no <br> text.
+        If their is content when the button is clicked it uses a function to create a new list item in the html and fill it will the user input. <br> The cross out button works soley with css 
+        to create a red line through the text area of the list. The X button works by removing the list item and then updating the local storage to keep it <br> removed. 
+        It saves the data by writing it into the local storage and then calling this function after every button click so every action is saved.</p>
+    </div>
+    
+    <button class="slide-button right" onclick="changeSlide('right')">&#10095;</button>
+  </div>
+
+  <script src="TDInfo.js"></script>
+</body>
+</html>
