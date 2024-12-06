@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Popups</title>
-    <link rel="stylesheet" href="Rinfo.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="Rinfo.css">
 </head>
 <body>
 
     <div class="title-box">
         <h1>The Recipe App</h1>
     </div>
-    <!-- Navigation Menu -->
     <nav>
         <button><a href="HomePage.html">Home</a></button>
         <button><a href="DraftInfo.html">Draft Project</a></button>
@@ -20,17 +19,12 @@
         <button><a href="Footbalers.html">Favorite Football Players</a></button>
         
     </nav>
-
-    <!-- Buttons -->
     <div class="button-container">
         <button onclick="openPopup('popup1')">THE IDEA</button>
         <button onclick="openPopup('popup2')">LINK</button>
         <button onclick="openPopup('popup3')">HOW IT WORKS</button>
     </div>
-    <!-- Overlay -->
     <div id="overlay" class="overlay" onclick="closeAllPopups()"></div>
-
-    <!-- Popups -->
     <div id="popup1" class="popup">
         <p>The idea for this app came from my family never knowing what to eat for dinner
         we would have stuff in the fridge but have no ideas. The app has to pages one for food and one for drink
@@ -52,6 +46,6 @@
         <button onclick="closePopup('popup3')">Close</button>
     </div>
 
-    <script src="Rinfoscript.js"></script> <!-- Link to external JavaScript -->
+    <script src="Rinfoscript.js"></script>
 </body>
 </html>

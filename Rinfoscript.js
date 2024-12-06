@@ -1,18 +1,18 @@
 function openPopup(popupId) {
-    document.getElementById('overlay').classList.add('show'); // Show overlay
+    document.getElementById('overlay').classList.add('show');
     const popup = document.getElementById(popupId);
-    popup.classList.add("open-popup"); // Show popup
+    popup.classList.add("open-popup");
 }
 
 function closePopup(popupId) {
     const popup = document.getElementById(popupId);
-    popup.classList.remove("open-popup"); // Hide popup
-    document.getElementById('overlay').classList.remove('show'); // Hide overlay
+    popup.classList.remove("open-popup");
+    document.getElementById('overlay').classList.remove('show');
 }
 
 function closeAllPopups() {
     document.querySelectorAll('.popup').forEach(popup => {
-        popup.classList.remove('open-popup'); // Hide all popups
+        popup.classList.remove('open-popup');
     });
-    document.getElementById('overlay').classList.remove('show'); // Hide overlay
+    document.getElementById('overlay').classList.remove('show');
 }

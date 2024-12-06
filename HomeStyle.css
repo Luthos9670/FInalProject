@@ -17,7 +17,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: block;
-    overflow: hidden; /* To make sure the video doesn't overflow the container */
+    overflow: hidden;
 }
 
 .video-background {
@@ -26,8 +26,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the container */
-    z-index: -1; /* Makes sure other content is above the video */
+    object-fit: cover;
+    z-index: -1;
 }
 
 .navbar{
@@ -137,10 +137,10 @@ button{
 }
 #sidePanel h2 {
     display: flex;
-    align-items: center;  /* Vertically align the back button and text */
+    align-items: center;
     font-size: 24px;
     margin-bottom: 20px;
-    padding-left: 10px;  /* Optional: adds space on the left of the title */
+    padding-left: 10px;
 }
 
 #sidePanel .back-btn {
@@ -149,7 +149,7 @@ button{
     border: none;
     color: #333;
     cursor: pointer;
-    margin-right: 10px; /* Add space between the arrow and the text */
+    margin-right: 10px;
     transition: color 0.3s;
 }
 

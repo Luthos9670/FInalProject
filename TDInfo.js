@@ -15,7 +15,6 @@ function changeSlide(direction) {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   }
 
-  // Hide all slides and show the current one
   slides.forEach((slide, index) => {
     slide.classList.remove("active");
     if (index === currentSlide) {
